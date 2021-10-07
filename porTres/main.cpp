@@ -1,14 +1,31 @@
 //
-//  main.cpp
-//  porTres
+//  PorTres.cpp
+//  Programacion
 //
-//  Created by Carlos Botella Navarro on 7/10/21.
+//  Created by Carlos Botella Navarro on 23/9/21.
 //
+
+/*
+ --------------------------------------------------------------
+ Datos de entrada: a : R
+ Datos de salida: R
+ Devolver a·3
+ --------------------------------------------------------------
+ */
 
 #include <iostream>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+double porTres(double num){
+    num = num*3;
+    cout << num << endl;
+    return num;
 }
+
+int main(){
+    int num;
+    cout << "Elige un número: ";
+    cin >> num;
+    porTres(num);
+}
+
