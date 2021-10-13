@@ -7,9 +7,7 @@
 
 /*
  --------------------------------------------------------------
- Datos de entrada: a : R
- Datos de salida: R
- Devolver a·3
+ double --> porTres --> double
  --------------------------------------------------------------
  */
 
@@ -17,15 +15,31 @@
 using namespace std;
 
 double porTres(double num){
+    
     num = num*3;
     cout << num << endl;
     return num;
 }
-
+// --------------------------------------------------------------
 int main(){
-    int num;
-    cout << "Elige un número: ";
-    cin >> num;
-    porTres(num);
-}
+    
+/*  Las proximas 4 lineas sirven para que el usuario elija el
+    numero pero como voy a hacer la prueba automatica las comento */
+    
+//    int num;
+//    cout << "Elige un número: ";
+//    cin >> num;
+//    porTres(num);
 
+    if (porTres(5)==15) { // prueba numeros positivos
+        cout<<"correcto"<<endl;
+    } else {
+        cout<<"hay un error"<<endl;
+    }
+    if (porTres(-3)==-9) { // prueba numeros negativos
+        cout<<"correcto"<<endl;
+    } else {
+        cout<<"hay un error"<<endl;
+    }
+}
+//  --------------------------------------------------------------
